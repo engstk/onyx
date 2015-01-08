@@ -32,6 +32,7 @@
 #include <linux/mutex.h>
 #include <linux/atomic.h>
 #include "radio-iris-commands.h"
+
 #define MIN_TX_TONE_VAL  0x00
 #define MAX_TX_TONE_VAL  0x07
 #define MIN_HARD_MUTE_VAL  0x00

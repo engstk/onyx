@@ -3862,4 +3862,5 @@ CONFIG_NLATTR=y
 CONFIG_QMI_ENCDEC=y
 # CONFIG_QMI_ENCDEC_DEBUG is not set
 
-#blu_spark extras
+### blu_spark Extras ###
+CONFIG_FB_MSM_MDSS_KCAL_CTRL=y

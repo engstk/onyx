@@ -1204,7 +1204,7 @@ static int otg_thread(void *arg)
 		wait_for_completion_timeout(&complet_dwc3, msecs_to_jiffies(1000));
 		INIT_COMPLETION(complet_dwc3);
 		if(otg_new_state != -1 && otg_current_state != otg_new_state){
-			printk(KERN_ERR "otg_new_state:%d otg_current_state:%d \n", otg_new_state,otg_current_state);
+			//printk(KERN_ERR "otg_new_state:%d otg_current_state:%d \n", otg_new_state,otg_current_state);
 			running = true;
 			otg_switch = otg_new_state;
 			enable_otg_event(otg_new_state);

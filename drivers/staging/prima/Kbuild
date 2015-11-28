@@ -677,6 +677,8 @@ endif
 EXTRA_CFLAGS += -Wno-maybe-uninitialized -Wno-unused-function
 
 KBUILD_CPPFLAGS += $(CDEFINES)
+CFLAGS_KERNEL := -Wno-bool-compare -Wno-logical-not-parentheses
+CFLAGS_MODULE := -Wno-bool-compare -Wno-logical-not-parentheses
 
 # Module information used by KBuild framework
 obj-$(CONFIG_PRIMA_WLAN) += $(MODNAME).o
